@@ -1,0 +1,484 @@
+Received: from a27-60.smtp-out.us-west-2.amazonses.com (unknown [54.240.27.60])
+	by app1 (Coremail) with SMTP id ZRYUCgAH6dVT60dqzxhqAA--.64023S3;
+	Sat, 04 Jul 2026 01:03:15 +0800 (CST)
+Received: from a27-60.smtp-out.us-west-2.amazonses.com (unknown [54.240.27.60])
+	by mtasvr (Coremail) with SMTP id _____wCHgBtq60dqKGQKAA--.5697S2;
+	Sat, 04 Jul 2026 01:03:39 +0800 (CST)
+Received: from a27-60.smtp-out.us-west-2.amazonses.com (unknown [54.240.27.60])
+	by ucloud-cmmxproxy-8 (Coremail) with SMTP id AQAAfwDnIbVl60dqhkJ+AA--.433S3;
+	Sat, 04 Jul 2026 01:03:35 +0800 (CST)
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=zpznxeidjqub2tus7cajdamhvcf6ct3w; d=manuscriptcentral.com;
+	t=1783098212;
+	h=Date:From:Reply-To:To:Cc:Message-ID:Subject:MIME-Version:Content-Type:Content-Transfer-Encoding;
+	bh=o/k21O7XAx2dTFAQllBLqSlgt5Ol7YB30J9LspB+xlo=;
+	b=YwllbAFJPKP257o7JNYUmJVSAAcUcn0TRUlqZ0LJfysuk0/zSJHVcaD6rn2Toc9E
+	7Uq0r1i66vOOXqzSTO18aHgH5tpXVWHWhEJhKyvzTY/feWp/Kx7K6LT1FKzof+Y3TsJ
+	hMZcyeB8rylgBh/ojiWKY7/vUaTkr6sAmB26yskk=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=hsbnp7p3ensaochzwyq5wwmceodymuwv; d=amazonses.com; t=1783098212;
+	h=Date:From:Reply-To:To:Cc:Message-ID:Subject:MIME-Version:Content-Type:Content-Transfer-Encoding:Feedback-ID;
+	bh=o/k21O7XAx2dTFAQllBLqSlgt5Ol7YB30J9LspB+xlo=;
+	b=gRfPpBoRUxYIzlN9EreHs/CGX3zvQCV9Pdiuh2GZxHu/sbWKQTg8kgtoD0hKfKFO
+	BwhN7V/cXbW7OW0Xz8dNBeyNKJyveZmCOHVWw+gBbS19vCr8JUcHCBkzkleumpsfeuH
+	HZB7+ohMEvMivtXGQK7hi0mnoXUfjAnM+pLIh/ZI=
+Date: Fri, 3 Jul 2026 17:03:32 +0000
+From: Transactions on Architecture and Code Optimization <onbehalfof@manuscriptcentral.com>
+Reply-To: profkaeli@gmail.com
+To: huan19@nudt.edu.cn
+Cc: profkaeli@gmail.com, huan19@nudt.edu.cn, tjli@nudt.edu.cn, 
+	tangyuhan@nudt.edu.cn, tanyujuan@nudt.edu.cn, jmzhang@nudt.edu.cn, 
+	masheng@nudt.edu.cn
+Message-ID: <0101019f28ef7f97-4ccb6dd7-11c1-4f52-8564-32147096e325-000000@us-west-2.amazonses.com>
+Subject: [SPAM] TACO-2026-55: Decision
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+X-SID: 1
+X-PRODUCT: s1m
+X-ENV-TYPE: prod
+X-ENV-NAME: 4280
+X-S1Info: xik_4FprzWtDG15CuKWU9Zwx3RwRZxBjTnUyBaDg57gPy4sQbCCgzkW4Fwgro78fbfTvAxqx6WYyQzZ2EQcdQ1f9Vb5t
+Feedback-ID: ::1.us-west-2.y8789kd/oyDlGffYrP88IUZ2JiqaxJLDOSJ1+/ZSPI4=:AmazonSES
+X-SES-Outgoing: 2026.07.03-54.240.27.60
+X-CM-TRANSID:AQAAfwDnIbVl60dqhkJ+AA--.433S3
+Sender: 0101019f28ef7f97-4ccb6dd7-11c1-4f52-8564-32147096e325-000000@outbound.manuscriptcentral.com
+Authentication-Results: app1; spf=pass smtp.mail=0101019f28ef7f97-4ccb
+	6dd7-11c1-4f52-8564-32147096e325-000000@outbound.manuscriptcentral.com
+	;
+X-Coremail-Antispam: 1UD129KBjvAXoWfJrWUCFWUAw1DZw1UtFW5KFg_yoW8CFyrZo
+	WS9ws5Zw1xKr43u3WDCF1kKFWUGFZY9w1Sqr1agr4UuF1vqFWUGa4UuwnxWa9IyF45Gw13
+	Ja48Ja45tFnIv3Z3n29KB7ZKAUJUUUU8529EdanIXcx71UUUUU7v73VFW2AGmfu7bjvjm3
+	AaLaJ3UjIYCTnIWjp_UUUO57k0a2IF6w4kM7kC6x804xWl1IIY67AEw4v_Jr0_Jr4l8cAv
+	FVAK0II2c7xJM28CjxkF64kEwVA0rcxSw2x7M28EF7xvwVC0I7IYx2IY67AKxVWUJVWUCw
+	A2z4x0Y4vE2Ix0cI8IcVCY1x0267AKxVWUJVW8JwA2z4x0Y4vEx4A2jsIE14v26r4j6F4U
+	M28EF7xvwVC2z280aVCY1x0267AKxVW8JVW8Jr1le2I262IYc4CY6c8Ij28IcVAaY2xG8w
+	Aqx4xG64xvF2IEw4CE5I8CrVC2j2WlYx0E2Ix0cI8IcVAFwI0_JrI_JrylYx0Ex4A2jsIE
+	14v26r1j6r4UMcvjeVCFs4IE7xkEbVWUJVW8JwACjcxG0xvEwIxGrwCjxxvEa2IrMxkF7I
+	0En4kS14v26r126r1DMxkFs20EY4vE44CYbxCE4x80FwCY02Avz4vEIxC_GwCY0x0Ix7I2
+	Y4AK64vIr41lcIIF0xvE2Ix0cI8IcVAFwI0_Jr0_JF4lcIIF0xvE2Ix0cI8IcVCY1x0267
+	AKxVWUJVW8JwCYIxAIcVC2z280aVAFwI0_Jr0_Gr1lcIIF0xvEx4A2jsIEc7CjxVAFwI0_
+	Jr0_Gr1l42xK82IYc2Ij64vIr41l42xK82IY64kExVAvwVAq07x20xyl42xK82IY6x8Erc
+	xFaVAv8VWxJr1UJr1l4x8a6x804xWl4I8I3I0E4IkC6x0Yz7v_Jr0_Gr1lx2IqxVAqx4xG
+	67AKxVWUJVWUGwC20s026x8GjcxK67AKxVWUGVWUWwC2zVAF1VAY17CE14v26r1q6r43MI
+	IYrxkI7VAKI48JMIIF0xvE42xK8VAvwI8IcIk0rVWUJVWUCbIYCTnIWIevJa73UjIFyTuY
+	vjxUBpV1DUUUU
+
+Dear an,
+
+We have received the reviews for your manuscript, =E2=80=9CArchitecting for=
+ Randomness: A Hierarchical Thousand-Core MIMD System for Monte Carlo Parti=
+cle Transport,=E2=80=9D which was submitted for possible publication in ACM=
+ TACO.
+
+The Associate Editor in charge of your manuscript  recommends a major revis=
+ion.
+
+This means that we encourage you to resubmit a revised version of your manu=
+script (preferably within one or two months). The hard deadline is 90 days.=
+ If you submit your revised manuscript on time, it will be re-reviewed by t=
+he same set of reviewers to make sure that the changes adequately address t=
+he issues raised.  If they are adequately addressed, the manuscript will be=
+ Accepted.  If they are not adequately addressed, the manuscript will be Re=
+jected.  The page limit for a revised manuscript remains 25 pages.
+
+According to ACM rules, your manuscript stays "under submission" during the=
+ revision period. Hence, unless you explicitly withdraw your manuscript, yo=
+u are not allowed to submit it elsewhere.
+
+See: http://www.acm.org/publications/policies/sim_submissions
+
+Once you have made the revision, resubmit your manuscript in the Author Cen=
+ter of Manuscript Central, under the "Manuscripts Waiting to be Revised" he=
+ading together with an additional letter to the Associate Editor explaining=
+ how you addressed the key issues in the reviews.
+
+As always, you can find information for authors at:
+
+http://taco.acm.org/authors.cfm
+
+If you have any questions please contact me as soon as possible.
+
+Sincerely,
+David Kaeli
+Editor-in-Chief of ACM TACO
+
+--------------------------------------------
+Here are the Editors' comments:
+
+The reviews point out several gaps and weaknesses in the evaluation and val=
+idation of results. These need to be addressed for acceptance.
+
+--------------------------------------------
+Here are the reviews:
+
+Referee: 1
+
+Recommendation: Needs Major Revision
+
+Comments:
+(There are no comments.)
+
+Additional Questions:
+Review's recommendation for paper type: Full length technical paper
+
+Should this paper be considered for a best paper award?: No
+
+Does this paper present innovative ideas or material?: Yes
+
+In what ways does this paper advance the field?: The paper proposes an arch=
+itecture and software to overcome the performance and efficiency bottleneck=
+s of an important and computationally demanding problem, namely Monte Carlo=
+ Particle Transport (MCPT).=20
+
+- The paper shows how MCPT stochasticity is fundamentally better suited to =
+fine-grained MIMD. And how such an architecture can overcome the inherent l=
+imitations of using CPUs and GPUs.
+- Then it proposes a MIMD system with novel architecture (FluxArch), a many=
+-core architecture with 1,024 lightweight in-order cores. The cores are sim=
+plified by specializing in MCPT. FluxArch comprises hierarchical interconne=
+ct and cascade dataflow engines co-designed for MCPT. Moreover, to fully le=
+verage FluxArch's hardware potential, the paper proposes a hardware-informe=
+d software for workload orchestration.
+
+The work addresses several challenges that can be encountered by MEMD archi=
+tects, including non-uniform access costs, contention, leveraging hybrid-pa=
+rallelism, and thread-afinity and locality. The presented architecture, dis=
+cussions, and insights can be useful to tackle similar problems that combin=
+e massive inherent parallelism and stochasticity on MIMD architectures.
+
+Is the information in the paper sound, factual, and accurate?: Yes
+
+If not, please explain why.:=20
+
+Rate the paper on its contribution to the body of knowledge in architecture=
+ and code optimization (none=3D1, very important=3D5): 4
+
+What are the major contributions of the paper?: - A many-core architecture =
+combining 1,024 lightweight in-order cores with a hierarchical tree-based i=
+nterconnect (FluxArch). By adopting a large-scale MIMD model, FluxArch supp=
+orts irregular control flow, avoiding branch penalties and warp divergence,=
+ while its custom topology reduces communication latency for irregular memo=
+ry accesses.=20
+
+- FluxArch engine, a specialized unit with cascaded dataflow logic that imp=
+roves arithmetic intensity and area efficiency by eliminating instruction o=
+verheads for compute-intensive kernels.
+
+- A hardware=E2=80=93software co-design strategy incorporating hybrid paral=
+lelism, architecture-aware thread affinity, and communication-driven spatia=
+l decomposition.
+
+Rate how well the ideas are presented (very difficult to understand=3D1 ver=
+y easy to understand =3D5): 4
+
+Rate the overall quality of the writing (very poor=3D1, excellent=3D5): 4
+
+Does this paper cite and use appropriate references?: Yes
+
+If not, what important references are missing?:=20
+
+Should anything be deleted from or condensed in the paper?: No
+
+If so, please explain.:=20
+
+Is the treatment of the subject complete?: Yes
+
+If not, What important details / ideas/ analyses are missing?:=20
+
+What type of paper is this?: This paper is an original, previously unpublis=
+hed, paper (to the best of my knowledge)
+
+<b>Recommendations to the authors</b>
+
+Please list some concrete actionable items to improve the paper. When the p=
+aper is resubmitted, the authors will at least have to explain how they dea=
+lt with these recommendations.: This paper addresses performance and effici=
+ency challenges in Monte Carlo Particle Transport (MCPT) by proposing a spe=
+cialized many-core MIMD architecture, FluxArch. It argues that MCPT=E2=80=
+=99s stochastic and irregular nature is better suited to fine-grained MIMD =
+execution than traditional CPU or GPU approaches. FluxArch combines 1,024 l=
+ightweight in-order cores with a hierarchical interconnect and specialized =
+dataflow engines to improve locality and reduce overhead. To fully exploit =
+the hardware, the work introduces a hardware=E2=80=93software co-design str=
+ategy incorporating hybrid parallelism, thread affinity, and communication-=
+aware decomposition.=20
+
+Overall, the paper provides valuable architectural insights and practical d=
+esign techniques for efficiently handling highly parallel and irregular wor=
+kloads. However, it would benefit from a stronger justification of key desi=
+gn choices, a more detailed description of the experimental setup, and a cl=
+earer comparison with alternative platforms and prior work. Additional deta=
+ils are provided in the comments below.
+
+- Some aspects of the architecture lack a clear justification. FluxArch use=
+s 8 compute tiles, each containing 8 clusters with 16 cores each, but the r=
+ationale behind this organization is not explained. Was this hierarchy deri=
+ved from design-space exploration or empirical evaluation? How would a diff=
+erent hierarchy (For example, 16 -> 8 -> 8 instead of 8 -> 8 -> 16) perform=
+?
+
+- The thread affinity and spatial decomposition strategies described in Sec=
+tion 5 may introduce load imbalance, causing some cores to handle significa=
+ntly more work than others. The authors acknowledge this as a limitation an=
+d suggest dynamic partitioning as a future work direction, but it would sti=
+ll be valuable to at least quantify the resulting imbalance and its impact =
+on performance.
+
+- A missing aspect of the experimental setup is the modeling of inter-tile =
+communication. More details are needed to ensure reproducibility and proper=
+ly contextualize the results.
+
+- In the experimental setup, there is no mention of random seed control or =
+variability between runs, which are important details as MCPT is stochastic=
+.
+
+- The authors describe how they measured the power for FluxArch but not for=
+ the baseline architectures. It is important to include such details for re=
+producibility and to ensure fair comparison (check the next cogent for the =
+fairness).
+
+- The authors mention that all reported energy metrics focus exclusively on=
+ on-chip power and that off-chip DRAM power is excluded. However, this make=
+s the energy comparisons not very informative and, in cases, unfair. This i=
+s especially the case when comparing against architectures that have L3 cac=
+he. As FluxArch has no shared L3 cache, it is likely to have more misses th=
+an the baselines with L3 cache. Moreover, the baselines with L3 cache get u=
+nfairly penalized as their L3 power is included.
+
+- In Section 6.6 on scalability evaluation, the authors argue that the Gold=
+ 6430 =C3=972 and FT 64-core outperform the proposed approach because their=
+ monolithic LLCs provide a unified, low-latency shared memory space that en=
+ables efficient inter-thread synchronization at lower core counts. However,=
+ no empirical data is provided to support this claim. Do the authors have m=
+easurements or analysis validating this explanation? This is particularly i=
+mportant since both systems significantly outperform FluxArch in most cases=
+, and no experiments beyond 64 cores are possible to demonstrate whether Fl=
+uxArch would eventually surpass them at larger scales (as they have no more=
+ cores).
+
+- Why are no scalability results presented for GPUs? There are different wa=
+ys to limit the GPU usage and emulate scalability. The authors are recommen=
+ded to add such results or provide good reasons not to.
+
+- The scalability behaviour of the XSBench benchmark is an outlier. The aut=
+hors are recommended to discuss the reason behind this. Are there certain g=
+eneralizable characteristics in this benchmark that affect FluxArch and EPY=
+C scaling?
+
+- The authors primarily evaluate CPUs and GPUs, but do not discuss alternat=
+ive architectures such as FPGAs, CGRAs, or specialized manycore systems lik=
+e Graphcore. These platforms may help mitigate some of the bottlenecks iden=
+tified for CPUs and GPUs. In addition, prior work has explored FPGA-based a=
+pproaches for Monte Carlo simulations. A comparison (discussion, not necess=
+arily a complete evaluation) would strengthen the paper and provide a more =
+complete perspective on the proposed architecture=E2=80=99s position in the=
+ design space.
+
+- The authors mentioned related architectures are using specialized, area-e=
+fficient designs (Fu et al [22] and Zhang et al. [72]). However, there is n=
+o comparison with these approaches. In the related work section, the author=
+s mention briefly how FluxArch qualitatively improves over these works but =
+do not provide any quantitative comparisons. The authors are recommended to=
+ include a more detailed comparison against the mentioned approaches as thi=
+s would strengthen the work considerably.
+
+- The authors are recommended to add references to the first paragraphs of =
+the introduction for readers interested in more details.
+
+Please help ACM create a more efficient time-to-publication process: Using =
+your best judgment, what amount of copy editing do you think this paper nee=
+ds?: Light
+
+Most ACM journal papers are researcher-oriented. Is this paper of potential=
+ interest to developers and engineers?: Yes
+
+
+Referee: 2
+
+Recommendation: Needs Minor Revision
+
+Comments:
+(There are no comments.)
+
+Additional Questions:
+Review's recommendation for paper type: Full length technical paper
+
+Should this paper be considered for a best paper award?: No
+
+Does this paper present innovative ideas or material?: Yes
+
+In what ways does this paper advance the field?:=20
+
+Is the information in the paper sound, factual, and accurate?: Yes
+
+If not, please explain why.:=20
+
+Rate the paper on its contribution to the body of knowledge in architecture=
+ and code optimization (none=3D1, very important=3D5): 4
+
+What are the major contributions of the paper?: 1) FluxArch: a 1,024-core h=
+omogeneous MIMD architecture combining lightweight in-order cores with a hi=
+erarchical tree-based (crossbar) interconnect, achieving the lowest max-hop=
+ count among compared many-core designs.=20
+
+2) The FluxArch Engine: an FP64-only cascaded-dataflow accelerator for the =
+stable MCPT math kernel, offloaded via MMIO without ISA extensions, ~67% sm=
+aller than a standard FPU.=20
+
+3) A hardware-software workload orchestration (hybrid MPI+OpenMP with Death=
+-Respawn migration, LLC-aware affinity, and flux-model-driven 3D spatial de=
+composition) that converts global coherence traffic into localized, low-lat=
+ency interactions.=20
+
+4) A full-system evaluation with iso-process technology projection and cons=
+ervative error margins.
+
+Rate how well the ideas are presented (very difficult to understand=3D1 ver=
+y easy to understand =3D5): 4
+
+Rate the overall quality of the writing (very poor=3D1, excellent=3D5): 3
+
+Does this paper cite and use appropriate references?: Yes
+
+If not, what important references are missing?:=20
+
+Should anything be deleted from or condensed in the paper?: No
+
+If so, please explain.:=20
+
+Is the treatment of the subject complete?: No
+
+If not, What important details / ideas/ analyses are missing?: Acknowledged=
+ but not quantified: DRAM-inclusive energy (Sec. 6.1 excludes it); whether =
+the working set fits in 4 MB L2 =E2=80=94 which contradicts Fig. 3(e); load=
+ imbalance on non-uniform inputs (Sec. 7). Absent: inter-tile MPI transport=
+ and Death-Respawn cost; the MMIO programming/porting interface; absolute t=
+hroughput; model validation against silicon.
+
+What type of paper is this?: This paper is an original, previously unpublis=
+hed, paper (to the best of my knowledge)
+
+<b>Recommendations to the authors</b>
+
+Please list some concrete actionable items to improve the paper. When the p=
+aper is resubmitted, the authors will at least have to explain how they dea=
+lt with these recommendations.: 1. Clarify measured vs. simulated and valid=
+ate the model. State whether each baseline is real hardware or gem5, and va=
+lidate FluxArch against a fabricated reference =E2=80=94 the headline 6.83=
+=C3=97/9.84=C3=97 claims depend on this.
+
+2. Resolve the L2-residency contradiction. Quantify per benchmark whether t=
+he replicated database fits in the 4 MB L2 (esp. XSBench); this conflicts w=
+ith Fig. 3(e) and underpins the speedups.
+
+3. Report DRAM-inclusive energy, or justify why excluding off-chip DRAM doe=
+s not bias a memory-bound workload.
+
+4. Fix inconsistencies and add absolutes. Reconcile the conflicting engine-=
+area and energy figures, report absolute throughput (histories/sec), and do=
+ a language pass.
+
+Please help ACM create a more efficient time-to-publication process: Using =
+your best judgment, what amount of copy editing do you think this paper nee=
+ds?: Moderate
+
+Most ACM journal papers are researcher-oriented. Is this paper of potential=
+ interest to developers and engineers?: Maybe
+
+
+Referee: 3
+
+Recommendation: Needs Major Revision
+
+Comments:
+(There are no comments.)
+
+Additional Questions:
+Review's recommendation for paper type: Full length technical paper
+
+Should this paper be considered for a best paper award?: No
+
+Does this paper present innovative ideas or material?: Yes
+
+In what ways does this paper advance the field?: MCPT combines massive para=
+llelism, random control flow, and irregular memory access. These traits def=
+eat CPU speculation and GPU SIMT. A fine-grained MIMD design is a reasonabl=
+e answer. The design is coherent and the paper is honest about its scope.
+
+Is the information in the paper sound, factual, and accurate?: Yes
+
+If not, please explain why.:=20
+
+Rate the paper on its contribution to the body of knowledge in architecture=
+ and code optimization (none=3D1, very important=3D5): 3
+
+What are the major contributions of the paper?: The paper introduces FluxAr=
+ch, a 1,024-core MIMD architecture for Monte Carlo Particle Transport (MCPT=
+). FluxArch pairs lightweight in-order cores with a hierarchical tree inter=
+connect, a domain-specific dataflow engine, and a topology-aware workload o=
+rchestration. The authors report up to 6.83x speedup and up to 9.84x on-chi=
+p energy efficiency over server CPUs and GPUs.
+
+Rate how well the ideas are presented (very difficult to understand=3D1 ver=
+y easy to understand =3D5): 3
+
+Rate the overall quality of the writing (very poor=3D1, excellent=3D5): 3
+
+Does this paper cite and use appropriate references?: Yes
+
+If not, what important references are missing?:=20
+
+Should anything be deleted from or condensed in the paper?: No
+
+If so, please explain.:=20
+
+Is the treatment of the subject complete?: No
+
+If not, What important details / ideas/ analyses are missing?: The performa=
+nce model is not validated. The energy result excludes DRAM and does not bo=
+und its effect. Both are central to the headline claims.
+
+What type of paper is this?: This paper is an original, previously unpublis=
+hed, paper (to the best of my knowledge)
+
+<b>Recommendations to the authors</b>
+
+Please list some concrete actionable items to improve the paper. When the p=
+aper is resubmitted, the authors will at least have to explain how they dea=
+lt with these recommendations.: 1. The performance model is unvalidated. Th=
+is is the central weakness.
+FluxArch is evaluated in gem5, with McPAT and CACTI for power and area. The=
+ cores derive from real ARM in-order cores, which helps. The full system do=
+es not. A 1,024-core design with a custom dataflow engine, a tree interconn=
+ect, and a NUMA chiplet hierarchy is never checked against silicon, RTL, or=
+ an existing many-core platform. The only error bar in the paper (30%) cove=
+rs the technology-node power projection, not the timing model. Every perfor=
+mance and efficiency number depends on this uncalibrated model. The 6.83x s=
+peedup cannot be assessed without validation evidence.
+
+2. The energy claim excludes DRAM, and the effect is not bounded.
+The paper reports large energy-efficiency gains but excludes off-chip DRAM =
+power. MCPT is memory-bound. The paper's own data (Fig. 3(d)(e)) shows the =
+working set exceeds on-chip capacity and forces frequent DRAM access. DRAM =
+energy is therefore likely a large share of system energy. The on-chip scop=
+e is disclosed, which is fair. The problem is that the impact is never quan=
+tified. A system-level energy result could be materially smaller. As writte=
+n, the energy advantage is an architectural-efficiency claim, not a system =
+claim, and the gap between the two is unknown.
+
+3. The baseline comparison has two specific gaps.
+One benchmark (EMCP) is an event-based proxy, and the orchestration is appl=
+ied to the CPU baselines, so the baselines are not naive. Two gaps remain. =
+Particle-sorting MCPT methods are not evaluated, despite being a known GPU =
+optimization. The comparison against prior specialized MCPT architectures i=
+s qualitative only (Table 4); there is no quantitative speedup against thos=
+e designs. Without these, the claim of superiority over the state of the ar=
+t is incomplete.
+
+Please help ACM create a more efficient time-to-publication process: Using =
+your best judgment, what amount of copy editing do you think this paper nee=
+ds?: Moderate
+
+Most ACM journal papers are researcher-oriented. Is this paper of potential=
+ interest to developers and engineers?: Yes

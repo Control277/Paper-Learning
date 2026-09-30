@@ -1,0 +1,156 @@
+\documentclass[11pt]{article}
+
+\usepackage[a4paper,margin=20mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage{needspace}
+\usepackage{microtype}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{bibentry}
+\usepackage{xr}
+\usepackage[hidelinks]{hyperref}
+\usepackage[most]{tcolorbox}
+\usepackage{pifont}
+\usepackage{fancyhdr}
+
+% Quiet running navigation; preserve the existing text block and footer.
+\setlength{\headheight}{14pt}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\footnotesize\color{origingrey}TACO-2026-55\enspace\textperiodcentered\enspace Response}
+\fancyhead[R]{\footnotesize\color{origingrey}\nouppercase{\leftmark}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\sectionmark}[1]{\markboth{#1}{}}
+
+\newtcolorbox{blockquote}{
+    enhanced,
+    breakable,
+    colback=gray!10,
+    frame hidden,
+    boxrule=0pt,
+    arc=0mm,
+    borderline west={2.5pt}{0pt}{gray!60},
+    left=8pt,
+    right=8pt,
+    top=4pt,
+    bottom=4pt
+}
+
+\definecolor{origingrey}{RGB}{78,78,78}
+\definecolor{reviewblue}{RGB}{0,82,155}
+\definecolor{revisionred}{RGB}{190,0,0}
+
+\newenvironment{reviewcomment}
+  {\par\noindent\begin{blockquote}\color{reviewblue}}
+  {\color{black}\end{blockquote}\medskip}
+
+\long\def\graysentence#1{{\color{origingrey}#1}}
+\long\def\redsentence#1{{\color{revisionred}#1}}
+\newcommand{\excerptlabel}[1]{\par\Needspace{3\baselineskip}\addvspace{4pt}\noindent\textcolor{black}{\textbf{#1}}\par\nopagebreak[4]}
+\newcommand{\revisionlocation}[1]{\par\Needspace{5\baselineskip}\noindent #1\par\nopagebreak[4]}
+
+\newenvironment{manuscriptexcerpt}
+  {\small\begin{list}{}{\setlength{\leftmargin}{\leftmargini}%
+     \setlength{\rightmargin}{\leftmargin}%
+     \setlength{\topsep}{2pt}\setlength{\partopsep}{0pt}%
+     \setlength{\parsep}{0pt}\setlength{\itemsep}{0pt}}\item\relax}
+  {\end{list}}
+
+% Use the revised manuscript's citation keys and numbers, never response-local numbering.
+% Compile the manuscript first whenever its bibliography changes.
+\externaldocument{../TACO_2026_FlusArch/main}
+% Formatting helpers used by the manuscript's ACM-generated .bbl entries.
+\providecommand{\bibfield}[2]{#2}
+\providecommand{\bibinfo}[2]{#2}
+\providecommand{\showarticletitle}[1]{#1}
+\providecommand{\shownote}[1]{#1}
+\providecommand{\showURL}{\relax}
+\providecommand{\showISBNx}[1]{\unskip}
+\providecommand{\showISBNxiii}[1]{\unskip}
+\providecommand{\showISSN}[1]{\unskip}
+\providecommand{\showCODEN}[1]{\unskip}
+\providecommand{\showLCCN}[1]{\unskip}
+\providecommand{\showeprint}[2][]{arXiv:#2}
+\newcommand{\papercite}[1]{\begingroup\NoHyper\citep{#1}\endNoHyper\endgroup}
+\makeatletter
+% ACM entries may end with \newblock, which consumes the space before \par.
+\long\def\BR@c@bibitem#1 #2\par{{%
+  \let\protect\@unexpandable@protect
+  \expandafter\gdef\csname BR@r@#1\@extra@b@citeb\endcsname
+    {#2}}}
+\newcommand{\loadpaperreferences}{%
+  \begingroup
+  \renewcommand{\bibliography}[1]{\input{../TACO_2026_FlusArch/main.bbl}}%
+  \nobibliography*%
+  \global\BR@starfalse
+  \endgroup}
+\newcommand{\paperreference}[1]{%
+  \item[\normalfont\papercite{#1}]%
+  \begingroup
+  \let\hyper@natanchorstart\@gobble
+  \let\hyper@natanchorend\@empty
+  \let\emph\textit
+  \textit{\bibentry{#1}}\par
+  \endgroup}
+\makeatother
+\newenvironment{excerptreferences}
+  {\par\smallskip\begingroup\color{black}\footnotesize
+   \Needspace{4\baselineskip}\noindent References cited in this excerpt:\par\nopagebreak[4]
+   \begin{description}[leftmargin=2.8em,labelwidth=2.5em,labelsep=.3em,font=\normalfont,style=multiline,itemsep=2pt,topsep=3pt]
+   \sloppy}
+  {\end{description}\endgroup\smallskip}
+
+\newcommand{\name}{FluxArch}
+\newcommand{\amd}{EPYC 9654 $\times$2}
+\newcommand{\intel}{Gold 6430 $\times$2}
+\newcommand{\ft}{FT 64-core}
+\newcommand{\ampare}{NVIDIA A100}
+\newcommand{\hopper}{NVIDIA H100}
+
+\newcommand{\redone  }{\textcolor[rgb]{0.722, 0.329, 0.314}{\ding{182}}}
+\newcommand{\redtwo  }{\textcolor[rgb]{0.722, 0.329, 0.314}{\ding{183}}}
+\newcommand{\redthree}{\textcolor[rgb]{0.722, 0.329, 0.314}{\ding{184}}}
+\newcommand{\redfour }{\textcolor[rgb]{0.722, 0.329, 0.314}{\ding{185}}}
+\newcommand{\redfive }{\textcolor[rgb]{0.722, 0.329, 0.314}{\ding{186}}}
+
+\setcounter{secnumdepth}{2}
+\setcounter{tocdepth}{2}
+\setlist{nosep}
+\setlist[enumerate]{itemsep=3pt,topsep=3pt,parsep=0pt,partopsep=0pt}
+\setlength{\intextsep}{8pt plus 2pt minus 2pt}
+
+% A compact title without empty author/date rows.
+\makeatletter
+\renewcommand{\@maketitle}{%
+  \begin{center}
+    {\LARGE \@title\par}
+  \end{center}
+  \vspace{8pt}}
+\makeatother
+
+\title{Response to the Editors and Reviewers\\
+\large Manuscript TACO-2026-55}
+\author{}
+\date{}
+
+\begin{document}
+\loadpaperreferences
+\maketitle
+
+We sincerely thank the editors and the reviewers for their careful reading and constructive comments. We have revised the manuscript accordingly. For clarity, reviewer comments are reproduced in \textcolor{reviewblue}{blue}, our responses are in black, and the corresponding changes in the revised manuscript are shown in \textcolor{revisionred}{red}.
+
+\tableofcontents
+\clearpage
+
+\input{reviewer1}
+\clearpage
+\input{reviewer2}
+\clearpage
+\input{reviewer3}
+
+\end{document}

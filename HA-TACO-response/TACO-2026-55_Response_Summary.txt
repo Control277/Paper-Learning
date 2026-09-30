@@ -1,0 +1,9 @@
+Dear Editor and Reviewers,
+
+Thank you for your careful review and constructive comments on our manuscript, TACO-2026-55, "Architecting for Randomness: A Hierarchical Thousand-Core MIMD System for Monte Carlo Particle Transport."
+
+We have revised the manuscript in response to your comments. Please see the attached file, "TACO-2026-55_Response_to_Reviewers.pdf", for our detailed, point-by-point responses, including the corresponding revisions, manuscript locations, and supporting figures and tables.
+
+We are also submitting a revised manuscript with changes highlighted in red to facilitate your review.
+
+Thank you for your time and consideration.
